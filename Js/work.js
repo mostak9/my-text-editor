@@ -77,18 +77,18 @@ document.getElementById('btn-center').addEventListener('click', function() {
     }
 })
 
-let eventClickedJus = 0
-document.getElementById('btn-center').addEventListener('click', function() {
-    eventClickedCenter++;
-    if(eventClickedCenter % 2 != 0) {
-        document.getElementById('editor-field').style.textAlign = 'center';
-        document.getElementById('btn-center').style.backgroundColor = '#E5E7EB';
-        document.getElementById('btn-center').style.color = '#185abd';
+let eventClickedRight = 0
+document.getElementById('btn-right').addEventListener('click', function() {
+    eventClickedRight++;
+    if(eventClickedRight % 2 != 0) {
+        document.getElementById('editor-field').style.textAlign = 'right';
+        document.getElementById('btn-right').style.backgroundColor = '#E5E7EB';
+        document.getElementById('btn-right').style.color = '#185abd';
     }
     else {
         document.getElementById('editor-field').style.textAlign = 'left';
-        document.getElementById('btn-center').style.backgroundColor = 'inherit';
-        document.getElementById('btn-center').style.color = 'white';
+        document.getElementById('btn-right').style.backgroundColor = 'inherit';
+        document.getElementById('btn-right').style.color = 'white';
     }
 })
 
