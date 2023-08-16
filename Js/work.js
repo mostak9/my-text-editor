@@ -106,3 +106,13 @@ document.getElementById('btn-justify').addEventListener('click', function() {
         document.getElementById('btn-justify').style.color = 'white';
     }
 })
+
+document.getElementById('color-picker').addEventListener('input', function() {
+    const color = document.getElementById('color-picker').value;
+    document.getElementById('editor-field').style.color = color;
+})
+
+document.getElementById('text-size').addEventListener('input', function() {
+    const fontValue = document.getElementById('text-size').value;
+    document.getElementById('editor-field').style.fontSize = fontValue+'px';
+})
