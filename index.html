@@ -44,9 +44,9 @@
         <!-- text formation part -->
         <div class="flex justify-between">
             <div>
-                <button class="text-xl font-bold p-1 hover:bg-gray-200 hover:text-[#185abd] text-white rounded-sm">B</button>
-                <button class="text-xl font-medium font-serif italic p-1 hover:bg-gray-200 hover:text-[#185abd] text-white rounded-sm">I</button>
-                <button class="text-xl font-medium underline-offset-1 p-1 hover:bg-gray-200 hover:text-[#185abd] text-white rounded-sm"><u>U</u></button>
+                <button id="btn-bold" class="text-xl font-bold p-1  text-white rounded-sm">B</button>
+                <button id="btn-italic" class="text-xl font-medium font-serif italic p-1 text-white rounded-sm">I</button>
+                <button id="btn-underline" class="text-xl font-medium underline-offset-1 p-1 text-white rounded-sm"><u>U</u></button>
             </div>
             <div class="text-xl text-white">
                 <i class="fa-solid fa-align-left mr-1 cursor-pointer p-2 hover:bg-gray-200 hover:text-[#185abd] rounded-sm"></i>
@@ -62,9 +62,14 @@
 
         <!-- editor part -->
         <div class="mt-4">
-            <textarea placeholder="Your text goes here..." class="textarea textarea-bordered textarea-lg w-full h-96" ></textarea>
+            <textarea id="editor-field" placeholder="Your text goes here..." class="textarea textarea-bordered textarea-lg w-full h-96" ></textarea>
         </div>
       </div>
     </section>
+
+
+    <!-- Js Scripts -->
+    <script src="./Js/utilities.js"></script>
+    <script src="./Js/work.js"></script>
   </body>
 </html>
