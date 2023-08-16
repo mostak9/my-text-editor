@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Text Editor</title>
     <!-- font awesome kit -->
-    <script src="https://kit.fontawesome.com/0b266e12f6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0b266e12f6.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Tailwind & DaisyUI cdn -->
     <link
@@ -17,18 +20,51 @@
 
     <!-- tailwind custom style -->
     <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- editor section -->
+    <section
+      class="flex justify-center items-center mt-9 w-4/5 mx-auto p-5 bg-[#185abd] rounded-md shadow-lg shadow-[#72a3ed]"
+    >
+      <div class="w-full">
+        <h1 class="text-5xl text-white font-medium text-center mb-4 font-sans">
+          My Text Editor
+        </h1>
+        <hr class="border-2 border-gray-400 rounded-md w-full mb-4" />
+        <!-- text formation part -->
+        <div class="flex justify-between">
+            <div>
+                <button class="text-xl font-bold p-1 hover:bg-gray-200 hover:text-[#185abd] text-white rounded-sm">B</button>
+                <button class="text-xl font-medium font-serif italic p-1 hover:bg-gray-200 hover:text-[#185abd] text-white rounded-sm">I</button>
+                <button class="text-xl font-medium underline-offset-1 p-1 hover:bg-gray-200 hover:text-[#185abd] text-white rounded-sm"><u>U</u></button>
+            </div>
+            <div class="text-xl text-white">
+                <i class="fa-solid fa-align-left mr-1 cursor-pointer p-2 hover:bg-gray-200 hover:text-[#185abd] rounded-sm"></i>
+                <i class="fa-solid fa-align-center mr-1 cursor-pointer p-2 hover:bg-gray-200 hover:text-[#185abd] rounded-sm"></i>
+                <i class="fa-solid fa-align-justify mr-1 cursor-pointer p-2 hover:bg-gray-200 hover:text-[#185abd] rounded-sm"></i>
+                <i class="fa-solid fa-align-right cursor-pointer p-2 hover:bg-gray-200 hover:text-[#185abd] rounded-sm"></i>
+            </div>
+            <div>
+                <input type="color" name="" id="" class="rounded-sm mr-2 -mb-2" >
+                <input type="number" name="" id="" max="30" min="11" class="rounded-sm -mt-1 text-black" placeholder="11">
+            </div>
+        </div>
+
+        <!-- editor part -->
+        <div class="mt-4">
+            <textarea placeholder="Your text goes here..." class="textarea textarea-bordered textarea-lg w-full h-96" ></textarea>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
